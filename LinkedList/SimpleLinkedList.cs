@@ -44,8 +44,8 @@ namespace LinkedList
                     Console.WriteLine("data - " + tempnode.data + " ");
                     tempnode = tempnode.Next;
                 }
-                Console.WriteLine("\n");
-            }
+                Console.WriteLine("\n");                
+            }            
         }
         public void Addreverse(int data)
         {
@@ -86,6 +86,16 @@ namespace LinkedList
                         temp.Next = node;
                     }
                 }
+            }
+        }
+        public void FirstDelete()
+        {
+            Node node = head;
+            if (head != null)
+            {
+                node = head;
+                head = head.Next;
+                node = null;
             }
         }
     }
